@@ -11,6 +11,10 @@ public class App {
     public static void main(String[] args) {
 
         Game game = new Game();
+
+        game.addCompetitors(2);
+        game.displayCompetitors();
+
         game.addTrack(0, new Track("Highway", 300));
         game.addTrack(1, new Track("Seaside", 100));
 
