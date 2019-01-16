@@ -9,13 +9,26 @@ import org.fasttrackit.cheater.CheatingCar;
 // this is a comment
 public class App {
     public static void main(String[] args) {
-        // polymorphism - an object can take multiple forms
-        Vehicle cheatingCar = new CheatingCar();
-        // implementation of accelerate method from CheatingCar will be used
-        cheatingCar.accelerate(10, 2);
 
-        // type casting
-        ((CheatingCar) cheatingCar).testMethod();
+        Game game = new Game();
+        game.addTrack(0, new Track("Highway", 300));
+        game.addTrack(1, new Track("Seaside", 100));
+
+
+        game.displayAvailableTracks();
+
+
+
+
+
+
+//        // polymorphism - an object can take multiple forms
+//        Vehicle cheatingCar = new CheatingCar();
+//        // implementation of accelerate method from CheatingCar will be used
+//        cheatingCar.accelerate(10, 2);
+//
+//        // type casting
+//        ((CheatingCar) cheatingCar).testMethod();
 
 
 //
